@@ -6,39 +6,15 @@
         xmlns:local="clr-namespace:Projekt_zaliczeniowy"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800">
-    <DockPanel>
-        <DataGrid x:Name="myGrid" x:FieldModifier="public" AutoGenerateColumns="False" ColumnWidth="*" >
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding id}"/>
-                <DataGridTextColumn Header="imie" Binding="{Binding imie}"/>
-                <DataGridTextColumn Header="płeć" Binding="{Binding płeć}"/>
-                    <DataGridTemplateColumn>
-                    <DataGridTemplateColumn.HeaderTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="Action" />
-                        </DataTemplate>
-                    </DataGridTemplateColumn.HeaderTemplate>
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <StackPanel Orientation="Horizontal">
-                                <Button x:Name="insertbtn" Content="Insert" Click="insertbtn_Click" />
-                                <Button x:Name="deletebtn" Content="Delete" Click="deletebtn_Click" />
-                                <Button x:Name="updatebtn" Content="Update" Click="updatebtn_Click" />
-                                
-
-                            </StackPanel>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                     </DataGridTemplateColumn>
-
-
-            </DataGrid.Columns>
-                
-                
-        </DataGrid>
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="350,66.6,0,0" TextWrapping="Wrap" Text="Szkoła" VerticalAlignment="Top"/>
+        <Button Content="Uczniowie" Name="uczniowie_btn" HorizontalAlignment="Left" Margin="80,300,0,0" VerticalAlignment="Top" Width="100" Click="uczniowie_btn_Click"/>
+        <Button Content="Nauczyciele" Name="nauczyciele_btn" HorizontalAlignment="Left" Margin="260.26,300,0,0" VerticalAlignment="Top" Width="100" Click="nauczyciele_btn_Click"/>
+        <Button Content="Klasy" Name="klasy_btn" HorizontalAlignment="Left" Margin="440,300,0,0" VerticalAlignment="Top" Width="100" Click="klasy_btn_Click"/>
+        <Button Content="Przedmioty" Name="przedmioty_btn" HorizontalAlignment="Left" Margin="620,300,0,0" VerticalAlignment="Top" Width="100" Click="przedmioty_btn_Click"/>
 
 
 
+    </Grid>
 
-    </DockPanel>
 </Window>

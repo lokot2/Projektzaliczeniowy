@@ -30,13 +30,13 @@ namespace Projekt_zaliczeniowy
 
         private void uButton_Click(object sender, RoutedEventArgs e)
         {
-            uczcniowie updatestudent = (from item in _db.uczcniowie
+            uczniowie updatestudent = (from item in _db.uczniowie
                                         where item.id == Id
                                         select item).Single();
             updatestudent.imie = answer1.Text;
             updatestudent.płeć = icombobox.Text;
             _db.SaveChanges();
-            MainWindow.datagrid.ItemsSource = _db.uczcniowie.ToList();
+            StudentsPage.datagrid.ItemsSource = _db.uczniowie.ToList();
             this.Hide();
         }
     }

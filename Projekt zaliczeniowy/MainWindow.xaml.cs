@@ -21,44 +21,37 @@ namespace Projekt_zaliczeniowy
     public partial class MainWindow : Window
     {
 
-        szkolaEntities _db = new szkolaEntities();
-
-        public static DataGrid datagrid;
+  
 
         public MainWindow()
         {
             InitializeComponent();
-            dataLoad();
+            
         }
 
-        private void dataLoad()
+        private void uczniowie_btn_Click(object sender, RoutedEventArgs e)
         {
-            myGrid.ItemsSource = _db.uczcniowie.ToList();
-            datagrid = myGrid;
+            StudentsPage window_StudentsPage = new StudentsPage();
+            window_StudentsPage.ShowDialog();
         }
 
-        private void insertbtn_Click(object sender, RoutedEventArgs e)
+        private void nauczyciele_btn_Click(object sender, RoutedEventArgs e)
         {
-            ipage window_ipage = new ipage();
-            window_ipage.ShowDialog();
-        }
-
-        private void updatebtn_Click(object sender, RoutedEventArgs e)
-        {
-            int Id = (myGrid.SelectedItem as uczcniowie).id;
-            UIPage winndow_UIPage = new UIPage(Id);
-            winndow_UIPage.ShowDialog();
+            Nauczyciele window_Nauczyciele = new Nauczyciele();
+            window_Nauczyciele.ShowDialog();
 
         }
 
-        private void deletebtn_Click(object sender, RoutedEventArgs e)
+        private void klasy_btn_Click(object sender, RoutedEventArgs e)
         {
-            int Id = (myGrid.SelectedItem as uczcniowie).id;
-            _db.uczcniowie.Remove((from item in _db.uczcniowie
-                                   where item.id == Id
-                                   select item).Single());
-            _db.SaveChanges();
-            myGrid.ItemsSource   = _db.uczcniowie.ToList();
+            Klasy window_Klasy = new Klasy();
+            window_Klasy.ShowDialog();
+        }
+
+        private void przedmioty_btn_Click(object sender, RoutedEventArgs e)
+        {
+            Przedmioty window_Przedmioty = new Przedmioty();
+            window_Przedmioty.ShowDialog();
         }
     }
 }

@@ -4,8 +4,15 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="57eb56e2efa24efb97d5322a7eade8fc" Name="Diagram1">
-        <EntityTypeShape EntityType="szkolaModel.uczcniowie" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="074d9ce8c6eb464fb3a9e5f16ded4740" Name="Diagram1">
+        <EntityTypeShape EntityType="szkolaModel.Klasa" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="szkolaModel.nauczyciele" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="szkolaModel.Przedmiot" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="szkolaModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="szkolaModel.uczniowie" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <AssociationConnector Association="szkolaModel.FK__Przedmiot__klasa__2B3F6F97" ManuallyRouted="false" />
+        <AssociationConnector Association="szkolaModel.FK__uczniowie__klasa__2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="szkolaModel.FK__Przedmiot__naucz__2C3393D0" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

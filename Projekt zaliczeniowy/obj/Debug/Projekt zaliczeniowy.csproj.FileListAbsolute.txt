@@ -23,3 +23,11 @@ C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\bin\Debug\E
 C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\bin\Debug\EntityFramework.xml
 C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\Projekt zaliczeniowy.csproj.CopyComplete
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\StudentsPage.g.cs
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\Nauczyciele.g.cs
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\StudentsPage.baml
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\Nauczyciele.baml
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\Klasy.g.cs
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\Klasy.baml
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\Przedmioty.g.cs
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\Przedmioty.baml

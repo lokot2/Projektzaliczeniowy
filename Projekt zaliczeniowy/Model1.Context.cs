@@ -25,6 +25,10 @@ namespace Projekt_zaliczeniowy
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<uczcniowie> uczcniowie { get; set; }
+        public virtual DbSet<Klasa> Klasa { get; set; }
+        public virtual DbSet<nauczyciele> nauczyciele { get; set; }
+        public virtual DbSet<Przedmiot> Przedmiot { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<uczniowie> uczniowie { get; set; }
     }
 }

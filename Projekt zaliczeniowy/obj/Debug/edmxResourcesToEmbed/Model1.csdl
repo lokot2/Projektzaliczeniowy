@@ -1,14 +1,109 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="szkolaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="uczcniowie">
+  <EntityType Name="Klasa">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Klasa1" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Przedmiot" Relationship="Self.FK__Przedmiot__klasa__2B3F6F97" FromRole="Klasa" ToRole="Przedmiot" />
+    <NavigationProperty Name="uczniowie" Relationship="Self.FK__uczniowie__klasa__2A4B4B5E" FromRole="Klasa" ToRole="uczniowie" />
+  </EntityType>
+  <EntityType Name="nauczyciele">
     <Key>
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="imie" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nazwisko" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="płeć" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Przedmiot" Relationship="Self.FK__Przedmiot__naucz__2C3393D0" FromRole="nauczyciele" ToRole="Przedmiot" />
   </EntityType>
+  <EntityType Name="Przedmiot">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="nazwa" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="nauczyciel" Type="Int32" />
+    <Property Name="klasa" Type="Int32" />
+    <NavigationProperty Name="Klasa1" Relationship="Self.FK__Przedmiot__klasa__2B3F6F97" FromRole="Przedmiot" ToRole="Klasa" />
+    <NavigationProperty Name="nauczyciele" Relationship="Self.FK__Przedmiot__naucz__2C3393D0" FromRole="Przedmiot" ToRole="nauczyciele" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="uczniowie">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="imie" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nazwisko" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="płeć" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="klasa" Type="Int32" />
+    <NavigationProperty Name="Klasa1" Relationship="Self.FK__uczniowie__klasa__2A4B4B5E" FromRole="uczniowie" ToRole="Klasa" />
+  </EntityType>
+  <Association Name="FK__Przedmiot__klasa__2B3F6F97">
+    <End Role="Klasa" Type="Self.Klasa" Multiplicity="0..1" />
+    <End Role="Przedmiot" Type="Self.Przedmiot" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Klasa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Przedmiot">
+        <PropertyRef Name="klasa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__uczniowie__klasa__2A4B4B5E">
+    <End Role="Klasa" Type="Self.Klasa" Multiplicity="0..1" />
+    <End Role="uczniowie" Type="Self.uczniowie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Klasa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="uczniowie">
+        <PropertyRef Name="klasa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Przedmiot__naucz__2C3393D0">
+    <End Role="nauczyciele" Type="Self.nauczyciele" Multiplicity="0..1" />
+    <End Role="Przedmiot" Type="Self.Przedmiot" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="nauczyciele">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Przedmiot">
+        <PropertyRef Name="nauczyciel" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="szkolaEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="uczcniowie" EntityType="Self.uczcniowie" />
+    <EntitySet Name="Klasa" EntityType="Self.Klasa" />
+    <EntitySet Name="nauczyciele" EntityType="Self.nauczyciele" />
+    <EntitySet Name="Przedmiot" EntityType="Self.Przedmiot" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="uczniowie" EntityType="Self.uczniowie" />
+    <AssociationSet Name="FK__Przedmiot__klasa__2B3F6F97" Association="Self.FK__Przedmiot__klasa__2B3F6F97">
+      <End Role="Klasa" EntitySet="Klasa" />
+      <End Role="Przedmiot" EntitySet="Przedmiot" />
+    </AssociationSet>
+    <AssociationSet Name="FK__uczniowie__klasa__2A4B4B5E" Association="Self.FK__uczniowie__klasa__2A4B4B5E">
+      <End Role="Klasa" EntitySet="Klasa" />
+      <End Role="uczniowie" EntitySet="uczniowie" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Przedmiot__naucz__2C3393D0" Association="Self.FK__Przedmiot__naucz__2C3393D0">
+      <End Role="nauczyciele" EntitySet="nauczyciele" />
+      <End Role="Przedmiot" EntitySet="Przedmiot" />
+    </AssociationSet>
   </EntityContainer>
 </Schema>
