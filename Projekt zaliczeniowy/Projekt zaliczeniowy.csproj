@@ -64,6 +64,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ipage_Klasy.xaml.cs">
+      <DependentUpon>ipage_Klasy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ipage_nauczyciele.xaml.cs">
+      <DependentUpon>ipage_nauczyciele.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ipage_Przedmioty.xaml.cs">
+      <DependentUpon>ipage_Przedmioty.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Klasa.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -109,7 +118,28 @@
     <Compile Include="UIPage.xaml.cs">
       <DependentUpon>UIPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UIPage_Klasy .xaml.cs">
+      <DependentUpon>UIPage_Klasy .xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIPage_nauczyciele.xaml.cs">
+      <DependentUpon>UIPage_nauczyciele.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIPage_Przedmioty.xaml.cs">
+      <DependentUpon>UIPage_Przedmioty.xaml</DependentUpon>
+    </Compile>
     <Page Include="ipage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ipage_Klasy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ipage_nauczyciele.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ipage_Przedmioty.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -145,6 +175,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UIPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UIPage_Klasy .xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UIPage_nauczyciele.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UIPage_Przedmioty.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

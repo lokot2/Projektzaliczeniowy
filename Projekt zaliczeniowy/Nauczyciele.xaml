@@ -12,7 +12,6 @@
                 <DataGridTextColumn Header="ID" Binding="{Binding id}"/>
                 <DataGridTextColumn Header="imie" Binding="{Binding imie}"/>
                 <DataGridTextColumn Header="nazwisko" Binding="{Binding nazwisko}"/>
-                <DataGridTextColumn Header="klasa" Binding="{Binding klasa}"/>
                 <DataGridTextColumn Header="płeć" Binding="{Binding płeć}"/>
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.HeaderTemplate>

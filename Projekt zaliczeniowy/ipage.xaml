@@ -27,7 +27,7 @@
             
         </ComboBox>
 
-        <ComboBox x:Name="klasa_icombobox"  ItemsSource="{Binding}" SelectedValuePath="id" DisplayMemberPath="Klasa1" HorizontalAlignment="Left" Height="28" Margin="181,152,0,0"  VerticalAlignment="Top" Width="89" />
+        <ComboBox x:Name="klasa_icombobox"  ItemsSource="{Binding}" SelectedValuePath="id" DisplayMemberPath="Klasa1" HorizontalAlignment="Left" Height="28" Margin="181,152,0,0"  VerticalAlignment="Top" Width="89"  />
 
 
 

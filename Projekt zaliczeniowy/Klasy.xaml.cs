@@ -37,15 +37,15 @@ namespace Projekt_zaliczeniowy
 
         private void insertbtn_Click(object sender, RoutedEventArgs e)
         {
-            ipage window_ipage = new ipage();
-            window_ipage.ShowDialog();
+            ipage_Klasy window_ipage_Klasy = new ipage_Klasy();
+            window_ipage_Klasy.ShowDialog();
         }
 
         private void updatebtn_Click(object sender, RoutedEventArgs e)
         {
             int Id = (myGrid.SelectedItem as Klasa).id;
-            UIPage winndow_UIPage = new UIPage(Id);
-            winndow_UIPage.ShowDialog();
+            UIPage_Klasy winndow_UIPage_Klasy = new UIPage_Klasy(Id);
+            winndow_UIPage_Klasy.ShowDialog();
 
         }
 

@@ -28,7 +28,7 @@ CREATE TABLE nauczyciele(
 ) ON [PRIMARY]
 
 CREATE TABLE Przedmiot(
-	[id] [int] NOT NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
 	[nazwa] [nchar](50) NULL,
 	[nauczyciel] [int] NULL,
 	[klasa] [int] NULL,
@@ -40,7 +40,7 @@ CREATE TABLE Przedmiot(
 GO
 
 CREATE TABLE Klasa(
-	[id] [int] NOT NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
 	[Klasa] [nchar](50) NULL,
 	
  CONSTRAINT [PK_Klasa] PRIMARY KEY CLUSTERED 

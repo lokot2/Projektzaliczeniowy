@@ -31,3 +31,15 @@ C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\K
 C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\Klasy.baml
 C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\Przedmioty.g.cs
 C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\Przedmioty.baml
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\ipage_nauczyciele.g.cs
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\ipage_nauczyciele.baml
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\UIPage_nauczyciele.g.cs
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\UIPage_nauczyciele.baml
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\UIPage_Klasy .g.cs
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\UIPage_Klasy .baml
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\ipage_Klasy.g.cs
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\ipage_Klasy.baml
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\ipage_Przedmioty.g.cs
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\ipage_Przedmioty.baml
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\UIPage_Przedmioty.g.cs
+C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\obj\Debug\UIPage_Przedmioty.baml

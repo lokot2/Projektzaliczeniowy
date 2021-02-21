@@ -61,6 +61,7 @@ namespace Projekt_zaliczeniowy
                                   select item).Single());
             _db.SaveChanges();
             myGrid.ItemsSource = _db.uczniowie.ToList();
+
         }
     }
 }

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\ZEUS\source\repos\Projekt zaliczeniowy\Projekt zaliczeniowy\App.xaml
-7-1664544330
+13-1103836552
 21750853300
-19-1361132853
+25-475716361
 181616807462
-ipage.xaml;Klasy.xaml;MainWindow.xaml;Nauczyciele.xaml;Przedmioty.xaml;StudentsPage.xaml;UIPage.xaml;
+ipage.xaml;ipage_Klasy.xaml;ipage_nauczyciele.xaml;ipage_Przedmioty.xaml;Klasy.xaml;MainWindow.xaml;Nauczyciele.xaml;Przedmioty.xaml;StudentsPage.xaml;UIPage.xaml;UIPage_Klasy .xaml;UIPage_nauczyciele.xaml;UIPage_Przedmioty.xaml;
 
 False
 

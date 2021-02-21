@@ -7,11 +7,19 @@
         mc:Ignorable="d"
         Title="UIPage" Height="300" Width="300">
     <Grid>
-        <TextBlock x:Name="text1" HorizontalAlignment="Left" Height="25" Margin="106,38,0,0" TextWrapping="Wrap" Text="Użytkownik" VerticalAlignment="Top" Width="137" RenderTransformOrigin="1.826,0.67"/>
-        <TextBlock x:Name="text2" HorizontalAlignment="Left" Height="28" Margin="82,95,0,0" TextWrapping="Wrap" Text="Imię" VerticalAlignment="Top" Width="65"/>
-        <TextBlock x:Name="text3" HorizontalAlignment="Left" Height="43" Margin="80,137,0,0" TextWrapping="Wrap" Text="Płeć" VerticalAlignment="Top" Width="86"/>
-        <Button x:Name="uButton" Content="Zmień" HorizontalAlignment="Left" Height="68" Margin="133,180,0,0" VerticalAlignment="Top" Width="110" Click="uButton_Click"/>
-        <ComboBox x:Name="icombobox" HorizontalAlignment="Left" Height="26" Margin="181,137,0,0" VerticalAlignment="Top" Width="89">
+        <TextBlock x:Name="tyl" HorizontalAlignment="Left" Height="25" Margin="93,43,0,0" TextWrapping="Wrap" Text="Student" VerticalAlignment="Top" Width="110" RenderTransformOrigin="1.826,0.67"/>
+        <TextBlock x:Name="text1" HorizontalAlignment="Left" Height="28" Margin="31,68,0,0" TextWrapping="Wrap" Text="Imię" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="answer1"  HorizontalAlignment="Left" Height="28" Margin="181,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="89"/>
+        <TextBlock x:Name="text2" HorizontalAlignment="Left" Height="28" Margin="31,96,0,0" TextWrapping="Wrap" Text="Nazwisko" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="answer2" HorizontalAlignment="Left" Height="28" Margin="181,96,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="89"/>
+        <TextBlock x:Name="text3" HorizontalAlignment="Left" Height="28" Margin="31,124,0,0" TextWrapping="Wrap" Text="Płeć" VerticalAlignment="Top" Width="65"/>
+
+
+
+        <TextBlock x:Name="text4" HorizontalAlignment="Left" Height="28" Margin="31,150,0,0" TextWrapping="Wrap" Text="Klasa" VerticalAlignment="Top" Width="65"/>
+        <Button x:Name="iButton" Content="Zmień" HorizontalAlignment="Left" Height="68" Margin="93,191,0,0" VerticalAlignment="Top" Width="110" Click="iButton_Click"/>
+        <ComboBox x:Name="icombobox" HorizontalAlignment="Left" Height="28" Margin="181,124,0,0"  VerticalAlignment="Top" Width="89">
+
             <ComboBox.Items>
                 <ComboBoxItem>Meżczyzna</ComboBoxItem>
                 <ComboBoxItem>Kobieta</ComboBoxItem>
@@ -19,7 +27,13 @@
 
         </ComboBox>
 
-        <TextBox x:Name="answer1" HorizontalAlignment="Left" Height="28" Margin="181,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="89"/>
+        <ComboBox x:Name="klasa_icombobox"  ItemsSource="{Binding}"  SelectedValuePath="id"  DisplayMemberPath="Klasa1"   HorizontalAlignment="Left" Height="28" Margin="181,152,0,0"  VerticalAlignment="Top" Width="89" />
+
+
+
+
+
+
 
     </Grid>
 </Window>

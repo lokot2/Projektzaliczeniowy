@@ -9,7 +9,6 @@
     <DockPanel>
         <DataGrid x:Name="myGrid" x:FieldModifier="public" AutoGenerateColumns="False" ColumnWidth="*" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding id}"/>
                 <DataGridTextColumn Header="nazwa" Binding="{Binding nazwa}"/>
                 <DataGridTextColumn Header="nauczyciel" Binding="{Binding nauczyciel}"/>
                 <DataGridTextColumn Header="klasa" Binding="{Binding klasa}"/>
